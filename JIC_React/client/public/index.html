@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-title" content="JUST IN CASE">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -13,22 +15,38 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"></script>
 
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-      
-   
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <!-- Material Icon CDN -->
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- Materialize CSS CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Your custom styles -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="./assets/images/logos/jicnowicon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logos/jicnowicon180.png"></link>
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logos/jicnowicon32.png"></link>
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/logos/jicnowicon16.png"></link>
+        <link rel="apple-touch-startup-image" href="./assets/images/logos/jicnowicon.png">
+        <link rel="shortcut icon" href="./assets/images/logos/jicnowicon.png"></link>
+    <!-- End of head script and link tags -->
+
+    <title>Just in Case</title>
+    
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        }
+      main {
+        flex: 1 0 auto;
+      }
+    </style>
   </head>
+
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
