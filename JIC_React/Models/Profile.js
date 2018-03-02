@@ -1,5 +1,3 @@
-import { url } from "inspector";
-
 var mongoose = require("mongoose");
 
 // Save a reference to the Schema constructor
@@ -9,16 +7,16 @@ var Schema = mongoose.Schema;
 // This is similar to a Sequelize model
 var ProfileSchema = new Schema({
 
-    // `firstname` is required and of type String
-    firstname: {
-        type: String,
-        required: true
-    },
-    // `lastname` is required and of type String
-    lasttname: {
-        type: String,
-        required: true
-    },
+    // // `firstname` is required and of type String
+    // firstname: {
+    //     type: String,
+    //     required: true
+    // },
+    // // `lastname` is required and of type String
+    // lasttname: {
+    //     type: String,
+    //     required: true
+    // },
 
     //relationship is required and of type String
     relationship: {
@@ -28,7 +26,7 @@ var ProfileSchema = new Schema({
 
     //photo is required and of type String
     photo: {
-        type: DataTypes.STRING,
+        type: String,
         allowNull: false
     },
 
@@ -73,6 +71,7 @@ var ProfileSchema = new Schema({
         type: String,
         allowNull: false
     }
+
 });
 
 // This creates our model from the above schema, using mongoose's model method
