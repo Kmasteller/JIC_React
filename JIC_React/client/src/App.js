@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
 import Nav from "./components/Nav";
 import Login from "./Pages/Login";
-import Home from "./Pages/Home";
+import Main from "./Pages/Main";
 import Admin from "./Pages/Admin";
 import Signup from "./Pages/Signup";
 import Profile from "./Pages/Profile";
@@ -66,7 +66,7 @@ class App extends Component {
         <div>
           <Nav userInfo={this.state.user} logout={this.userLogOut}/>
           <Switch>  
-            <Route exact path="/" component={Home}/>
+            <Route exact path="/" component={Main}/>
             <Route path="/user/:username" render={(props) => {
                return <Profile {...props} />
             }} />
